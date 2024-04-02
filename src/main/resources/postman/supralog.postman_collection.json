@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "55d41cbc-d482-48f5-a88a-995c9e324300",
+		"name": "supralog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4511785"
+	},
+	"item": [
+		{
+			"name": "generateProductsReceipt 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  \"1 book at 12.49\",\r\n  \"1 movie at 14.99\",\r\n  \"1 chocolate bar at 0.85\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/products/receipt",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"products",
+						"receipt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateProductsReceipt 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"1 imported box of chocolates at 10.00\",\r\n    \"1 imported bottle of perfume at 47.50\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/products/receipt",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"products",
+						"receipt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateProductsReceipt 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"1 imported bottle of perfume at 27.99\",\r\n    \"1 bottle of perfume at 18.99\",\r\n    \"1 packet of pills at 9.75\",\r\n    \"1 imported box of chocolates at 11.25\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/products/receipt",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"products",
+						"receipt"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "http://localhost:8070/supralog",
+			"type": "string"
+		}
+	]
+}
